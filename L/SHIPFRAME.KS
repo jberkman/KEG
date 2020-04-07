@@ -1,0 +1,9 @@
+@LAZYGLOBAL OFF.
+DECLARE PARAMETER LIB.
+LIB:ADD({
+    DECLARE LOCAL S IS LEXICON().
+    SET S:I TO V(1, 0, 0).
+    SET S:J TO V(0, 1, 0).
+    SET S:K TO V(0, 0, 1).
+    RETURN S.
+}).
